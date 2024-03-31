@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "saniraq-kz"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "saniraq"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.100.0"
+uvicorn = "^0.22.0"
+jinja2 = "^3.1.2"
+python-multipart = "^0.0.6"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+attrs = "^23.1.0"
+pydantic = {extras = ["email"], version = "^2.0.3"}
+alembic = "^1.11.1"
+sqlalchemy = "^2.0.19"
+jose = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
